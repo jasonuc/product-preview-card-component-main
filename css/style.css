@@ -1,0 +1,121 @@
+/* 
+font-family: 'Fraunces', serif;
+font-family: 'Montserrat', sans-serif;
+ */
+
+html {
+    font-size: 18px;
+    background-color:  #F2E9E3;
+    width: 100vw;
+    height: 100vh;
+}
+
+.card {
+    border-radius: 15px;
+    width: 700px;
+    height: 480px;
+    border: 1px solid black;
+    margin: 150px auto;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+}
+
+.left {
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    width: 50%;
+    height: 100%;
+    background-image: url('../images/image-product-desktop.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 1px solid black;
+}
+
+.right {
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    width: 50%;
+    height: 100%;
+    padding: 40px;
+    padding-top: 35px;
+    box-sizing: border-box;
+    border: 1px solid black;
+}
+
+#perfume-text {
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 0.7rem;
+    color: hsl(212, 21%, 14%);
+    margin-bottom: 25px;
+    font-weight: 400;
+}
+
+h1 {
+    font-family: 'Fraunces', serif;
+    font-size: 1.9rem;
+    font-weight: 800;
+    margin-bottom: 25px;
+    color: hsl(212, 21%, 14%);
+}
+
+#subtext {
+    font-family: 'Montserrat', sans-serif;
+    /* color: hsl(228, 12%, 48%); */
+    color: hsl(220, 3%, 23%);
+    font-weight: 400;
+    font-size: 0.955rem;
+    line-height: 1.5;
+    margin-bottom: 30px;
+}
+
+#price {
+    width: 100%;
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: row;
+    height: 40px;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+#price #big-price {
+    font-family: 'Fraunces', serif;
+    font-size: 1.8rem;
+    color: hsl(158, 36%, 37%);
+    font-weight: 800;
+    margin-right: 20px;
+}
+
+#price #small-price {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.8rem;
+    color: hsl(228, 12%, 48%);
+    font-weight: 300;
+    text-decoration: line-through;
+}
+
+.button {
+    display: flex;
+    width: 100%;
+    height: 50px;
+    border-radius: 8px;
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(158, 36%, 37%);
+}
+
+.button img {
+    font-family: 'Montserrat', sans-serif;
+    margin-right: 10px;
+    color: white;
+}
+
+.button p {
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
