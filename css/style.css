@@ -3,6 +3,14 @@ font-family: 'Fraunces', serif;
 font-family: 'Montserrat', sans-serif;
  */
 
+@media only screen and (min-width: 450px) {
+    .card {
+        margin: 150px auto;
+    }
+}
+
+/* --------------------------------------------------- */
+
 html {
     font-size: 18px;
     background-color:  #F2E9E3;
@@ -13,8 +21,8 @@ html {
 .card {
     border-radius: 15px;
     width: 700px;
-    height: 480px;
-    border: 1px solid black;
+    height: 500px;
+    /* margin: 30px auto; */
     margin: 150px auto;
     background-color: white;
     display: flex;
@@ -29,7 +37,11 @@ html {
     background-image: url('../images/image-product-desktop.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    border: 1px solid black;
+    /* border: 1px solid black; */
+}
+
+.left img {
+    display: none;
 }
 
 .right {
@@ -40,7 +52,7 @@ html {
     padding: 40px;
     padding-top: 35px;
     box-sizing: border-box;
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
 
 #perfume-text {
@@ -107,6 +119,10 @@ h1 {
     background-color: hsl(158, 36%, 37%);
 }
 
+.button:hover {
+    background-color: hsl(156, 42%, 18%);
+}
+
 .button img {
     font-family: 'Montserrat', sans-serif;
     margin-right: 10px;
@@ -118,4 +134,58 @@ h1 {
     color: white;
     font-size: 0.8rem;
     font-weight: 500;
+}
+
+/* --------------------------------------------------- */
+
+@media only screen and (max-width: 480px) {
+
+    .card {
+        border-radius: 15px;
+        width: 93%;
+        /* height: 630px; */
+        height: auto;
+        margin: 50px auto;
+        display: flex;
+        /* border: 1px solid black;   */
+        flex-direction: column;
+    }
+    
+    .left {
+        /* border: 1px solid black; */
+        border-bottom-left-radius: 0px;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        width: 100%;
+        height: 300px;
+        background-image: url('../images/image-product-mobile.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .right {
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+        width: 100%;
+        box-sizing: border-box;
+        padding: 30px;
+    }
+    
+    #perfume-text {
+        margin-top: 13px;
+        margin-bottom: 15px;
+    }
+
+    h1 {
+        margin-bottom: 15px;
+    }
+
+    #subtext {
+        margin-bottom: 18px;
+    }
+
+    #price {
+        margin-bottom: 18px;
+    }
 }
