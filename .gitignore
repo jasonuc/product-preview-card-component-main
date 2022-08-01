@@ -4,6 +4,7 @@
 #####################################################
 *.sketch
 *.fig
+website-text.txt
 
 # Avoid accidental XD upload if you convert the design file
 ###############################################
